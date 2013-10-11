@@ -85,23 +85,23 @@ $$
 \includegraphics[width=\textwidth]{age_hist.pdf}
 \end{minipage}
 \begin{minipage}{.7\textwidth}
-The increase in uncertainty is due to the lack of data points for ages near 20.  This is evident in the histogram of ages to the left.
+The increase in uncertainty is due to the lack of data points for ages near 20.  This is evident in the histogram of ages to the left.  As indicated in the book, numerical extrapolation leads to increases in uncertainty.
 \end{minipage}
 
 \subproblem{ In the text, we made a permutation test corresponding to the $F$-test for the significance of all the predictors.  Execute the permutation test corresponding to the $t$-test for age in this model.  (Hint: \texttt{summay(g)\$coef[4,3]} gets you the $t$-statistic you need if the model is galled \texttt g.)}
 
-We fit the model with 4999 permutations of the age variable and compare the $F$-statistic given by squaring the $t$-statistic for the age coefficient and compare it to the unpermuted coefficient via the codes
-{\small
-\begin{verbatim}
-nperm = 4999
-F1 = mdl$coef[4,3]
-numerator = sum(replicate(nparm, 
-    summary(lm(lpsa~lcavol+lweight+sample(age)+lbph+svi+lcp+gleason+pgg45))$coef[4,3]^2 > F1
-  ))
-(p = (numerator+1)/(nperm+1)) 
-\end{verbatim}
-}
-This resulted in the p-value of 0.0814, providing slight evidence for significance.
+We fit the model with 4999 permutations of the age variable and compare the $F$-statistic given by squaring the $t$-statistic for the age coefficient and compare it to the unpermuted coefficient's $F$-statistic.
+% via the codes %{\small
+%\begin{verbatim}
+%nperm = 4999
+%F1 = mdl$coef[4,3]
+%numerator = sum(replicate(nparm, 
+%    summary(lm(lpsa~lcavol+lweight+sample(age)+lbph+svi+lcp+gleason+pgg45))$coef[4,3]^2 > F1
+%  ))
+%(p = (numerator+1)/(nperm+1)) 
+%\end{verbatim}
+%}
+This resulted in a p-value of 0.0838, providing slight evidence for significance.
 
 \problem{Faraway 3.3.}
 Using the \texttt{teengamb} data, fit a model with \texttt{gamble} as the response and the other variables as predictors.  
@@ -122,7 +122,7 @@ This indicates that sex and income are significant in the model with each predic
 
 \subproblem{ What interpretation should be given to the coefficient for \texttt{sex}?}
 
-Since the sex codes are 0=male and 1=female, we conclude that holding all other predictors constant, on average males gambled about \pounds22 more a week than females.
+Since the sex codes are 0=male and 1=female, we conclude that holding all other predictors constant, on average male gambling expenditure is about \pounds22 more than females'.
 
 \subproblem{ Predict the amount that a male with average (given these data) status, income, and verbal score would gamble along with an appropriate 95\% CI.  Repeat the prediction for a male with maximal values (for this data) of status, income and verbal score.  Which CI is wider and why is this result expected? }
 
@@ -137,7 +137,7 @@ The ANOVA model comparison test gives
 $$
   F = \frac{\RSS_\omega - \RSS_\Omega}{\MSE} \approx 4.134\quad\text{ and }\quad p = 0.012.
 $$
-So, there is some statistical evidence that sex, status, and verbal score add explanatory significance to the model.
+So, there is statistical evidence that sex, status, and verbal score add explanatory significance to the model.
 
 \problem{Faraway 3.4.}
 Using the \texttt{sat} data:
@@ -161,7 +161,7 @@ F-statistic: 4.066 on 3 and 46 DF,  p-value: 0.01209
 \end{verbatim}}
 \end{minipage}
 \begin{minipage}{.4\textwidth}
-From the \texttt{summary} command on the linear model, we test $H_0\,:\beta_{salary} = 0$ and see that $\beta_{salary}$ marginally significant ($p = 0.0667$) in the full model. The test for model significance, $H_0\,:\beta_{salary} = \beta_{ratio} = \beta_{expend} = 0$, also provides marginal evidence contrary to $H_0$ - that is, there is statistical evidence suggesting significant explanatory power of the model. We note the sample size is 50, and thus the statistical significance may not be pratically significant especially in the absence of a scientific explanation. 
+From the \texttt{summary} command on the linear model, we test $H_0\,:\beta_{salary} = 0$ and see that $\beta_{salary}$ marginally significant ($p = 0.0667$) in the full model. The test for model significance, $H_0\,:\beta_{salary} = \beta_{ratio} = \beta_{expend} = 0$, provides  evidence contrary to $H_0$ - that is, there is statistical evidence suggesting significant explanatory power of the model. We note the sample size is 50, and thus the statistical significance may not be pratically significant especially in the absence of a scientific explanation. 
 \end{minipage}
 
 \subproblem{Now add \texttt{takers} to the model.  Test the hypothesis that $\beta_{takers} = 0$.  Compare this model to the previous one using an $F$-test.  Demonstrate that the $F$-test and $t$-test here are equivalent.}
@@ -379,6 +379,7 @@ $$\text{ or }( 89.120, 158.981 ).$$
 \subproblem{ Test the null hypothesis $H_0\,:\,\beta_1=\beta_2=\beta_3=\beta_4=0$. }
 
 This is the model significance test given by the $F$-statistic
+\enlargethispage{3em}
 $$
   F = \frac{(\TSS - \RSS)/(p-1)}{\MSE} \approx 751.0606,
 $$
@@ -499,4 +500,49 @@ To measure this relationship, the researchers sampled from the ocean column at v
 
 Does the effect of UVB exposure on the distribution of percentage inhibition differ at the surface and in the deep?  How much difference is there?  Analyze these data and write a summary of statistcal findings in no more than one page.  (Suggestion: Fit the model with different intercepts and different slopes, even if some terms are not significantly different from zero.)
 \end{longproblem}
+
+\begin{wrapfigure}{l}{.5\textwidth}
+\includegraphics[width=.5\textwidth]{ozone_eda.pdf}
+\end{wrapfigure}
+In the figure to the left, we have plotted each percent inhibition against UVB
+exposure with depth indicated by different symbols.  Least squares fitted lines
+for each depth are plotted on top of the data.  We see that at each depth level
+inhibition increases with ultraviolet radiation, and as expected by
+the researchers, inhibition is greater at the lower depth.
+There may be a difference in the effect of UVB exposure on inhibition as
+indicated by the differing slopes of the least square lines.  This suggests a
+possible interaction between depth and UVB exposure.
+
+So, we fit the linear model with an interaction term,
+$$
+  y_i = \beta_0 + \beta_1x_{i1} + \beta_2x_{i2} + \beta_3 (x_{i1}x_{i2}) + \epsilon_i,
+$$
+where the response $y_i$ is the percent inhibition, $x_{i1}$ is the UVB exposure, $x_{i2}=1$ if measured at depth and $x_{i2}=0$ if measured at the surface, and $\epsilon_i$ is assumed to be identically distributed normal error. The resulting estimates are
+\begin{center}
+\begin{tabular}{c| c c c c}
+&$\beta_0$ &$ \beta_1$ &$ \beta_2$ &$ \beta_3$\\
+\hline
+Estimate & 2.967 & 258.936 & -1.467 & 980.039 \\ 
+Std. Error & 9.726 & 309.612 & 10.538 & 381.539  \\
+\hline
+\end{tabular}.
+\end{center}
+
+To answer the primary question posed by the researchers, we tested the significance of the parameter $\beta_3$ in the model, and it was found to be moderately signficant ($p = 0.023$). Hence, we have evidence of an interaction between UVB and depth in explaining phytoplankton inhibition.  We can quantify the interaction by writing the model in the two depth cases
+\begin{align*}
+  y_i &= \beta_0 + \beta_1 x_{1i} \quad\quad\quad\text{ when at depth, and }\\
+  y_i &= (\beta_0 + \beta_2) + (\beta_1+ \beta_3)  x_{1i} \quad\text{ at the surface. }
+\end{align*}
+That is the slope of the relationship between inhibition and UVB is expected to
+be $\hat\beta_3 \approx 980.039$ higher at depth than at the surface, and the
+intercept is expected to change by $\hat\beta_2 \approx -1.467$.
+\begin{wrapfigure}{l}{.5\textwidth}
+\includegraphics[width=.25\textwidth]{ozone_resid.pdf}\includegraphics[width=.25\textwidth]{ozone_qqplot.pdf}
+\end{wrapfigure}
+Regarding the normality assumption, we note that there is no evidence of variance heterogeneity in the residual
+plot.  There may be non-normality as indicated by the outlying values in the qqplot. The
+Shapiro-Fracia test reports a $p$-value of 0.055, indicating possible
+non-normality. An arcsin transformation on the response has worse normality problems (SF-test: $p=0.024$).
+
+However, a permutation test ($n=5000$) still indicates significance of the interaction at $p = 0.0216$.
 \end{document} 

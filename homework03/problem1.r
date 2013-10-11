@@ -41,7 +41,7 @@ dev.off()
 
 # e
 nperm = 4999
-F1 = mdl$coef[4,3]
-numerator = sum(replicate(nparm, summary(lm(lpsa~lcavol+lweight+sample(age)+lbph+svi+lcp+gleason+pgg45))$coef[4,3]^2 > F1))
+F1 = summary(mdl)$coefficients[4,3]^2 # Numerator to F test
+numerator = sum(replicate(nperm, summary(lm(lpsa~lcavol+lweight+sample(age)+lbph+svi+lcp+gleason+pgg45))$coef[4,3]^2 > F1))
 (p = (numerator+1)/(nperm+1))
 
