@@ -1,0 +1,61 @@
+"name","year","height","stories"
+"1","191 Peachtree Plaza (Atlanta)           ",1990,770,54
+"2","Southern Bell Telephone (Atlanta)       ",1980,677,47
+"3","Bell South Enterprises (Atlanta)        ",1990,428,28
+"4","Club Towers Apts. (Atlanta)             ",1989,410,38
+"5","One Georgia Center (Atlanta)            ",1966,371,29
+"6","Scotia Centre (Calgary)                 ",1976,504,38
+"7","Amoco (Chicago)                         ",1974,1136,80
+"8","IBM Plaza (Chicago)                     ",1991,695,52
+"9","Madison Plaza (Chicago)                 ",1982,551,45
+"10","190 Lasalle (Chicago)                   ",1986,550,40
+"11","Carew Tower (Cincinnati)                ",1931,568,49
+"12","Central Trust Tower (Cincinnati)        ",1979,504,33
+"13","Cityplace Center (Dallas)               ",1988,560,50
+"14","2001 Bryan (Dallas)                     ",1973,512,40
+"15","Skyway Tower (Dallas)                   ",1981,448,31
+"16","Burnett Plaza (Fort Worth)              ",1983,538,40
+"17","Houston Light and Power (Houston)       ",1968,410,27
+"18","Niels Esperson (Houston)                ",1927,409,31
+"19","Indiana National Bank (Indianapolis)    ",1969,504,35
+"20","Norwest (Minneapolis)                   ",1988,777,57
+"21","Lincoln Centre (Minneapolis)            ",1987,496,31
+"22","1st Bank Place West (Minneapolis)       ",1960,386,26
+"23","Energy Centre (New Orleans)             ",1984,530,39
+"24","Hyatt Regency (New Orleans)             ",1976,360,25
+"25","Hibernia Bank (New Orleans)             ",1920,355,23
+"26","Empire State (New York)                 ",1931,1250,102
+"27","Cityspire (New York)                    ",1989,802,72
+"28","Citibank (New York)                     ",1907,741,57
+"29","World Finance Center (New York)         ",1988,739,54
+"30","712 5th Avenue (New York)               ",1990,650,56
+"31","Celanese Building (New York)            ",1973,592,45
+"32","520 Madison Avenue (New York)           ",1983,577,42
+"33","Liberty Tower (Oklahoma City)           ",1971,500,36
+"34","Woodmen Tower (Omaha)                   ",1969,469,30
+"35","First National Center (Omaha)           ",1971,320,22
+"36","Sun Bank Center (Orlando)               ",1988,441,31
+"37","Two Liberty Place (Philadelphia)        ",1989,845,52
+"38","2000 Market Street (Philadelphia)       ",1973,435,29
+"39","Two Logan Square (Philadelphia)         ",1987,435,34
+"40","Penn Mutual Life (Philadelphia)         ",1931,375,20
+"41","Medical Tower (Philadelphia)            ",1931,364,33
+"42","Inquirer Building (Philadelphia)        ",1924,340,18
+"43","Nix Professional Building (St. Paul)    ",1931,375,23
+"44","Emerald-Shapery Center (San Diego)      ",1991,450,30
+"45","First & Market (San Francisco)          ",1973,529,38
+"46","Embarcadero Center (San Francisco)      ",1976,412,31
+"47","AT&T Gateway Tower (Seattle)            ",1990,722,62
+"48","First Interstate Center (Seattle)       ",1983,574,48
+"49","520 Pike Tower (Seattle)                ",1984,498,29
+"50","Key Tower (Seattle)                     ",1986,493,40
+"51","Century Square (Seattle)                ",1986,379,30
+"52","100 North Tampa (Tampa)                 ",1992,579,42
+"53","First Financial Tower (Tampa)           ",1973,458,36
+"54","NCNB Plaza (Tampa)                      ",1988,454,33
+"55","First Canadian Place (Toronto)          ",1979,952,72
+"56","Commerce Court West (Toronto)           ",1972,784,57
+"57","Commerce Court North (Toronto)          ",1930,476,34
+"58","Palace Pier (Toronto)                   ",1978,453,46
+"59","T-D Bank Tower (Vancouver)              ",1978,440,30
+"60","Harbour Centre (Vancouver)              ",1977,428,21
