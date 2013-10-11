@@ -340,25 +340,26 @@ $$
 \subproblem{ Test the model with only variables $x_1$ and $x_2$ against the model with all of the variables $x_1,x_2,x_3,x_4$.}
 
 The relavant $F$-statistic is
-$$
-  F = \frac{\SSReg(x_1,x_2)/2}{\MSE(x_1,x_2,x_3,x_4)}= \frac{(\SSReg(x_1) + \SSReg(x_2|x_1))/2}{\MSE(x_1,x_2,x_3,x_4)} = \frac{(883880+8183)/2}{295.5} = 1495.471.
-$$
-The p-value for the test is practically 0 since $F \gg 1$, hence significant evidence exists for the joint explanatory power $x_1$ and $x_2$.  
+\begin{align*}
+  F &= \frac{\SSReg(x_3,x_4|x_1,x_2)/2}{\MSE(x_1,x_2,x_3,x_4)}= \frac{(\SSReg(x_3|x_1,x_2) + \SSReg(x_4|x_1,x_2,x_3))/2}{\MSE(x_1,x_2,x_3,x_4)} \\
+  &= \frac{(3237 + 694)/2}{295.5} = 6.650.
+\end{align*}
+The p-value for the test is practically 0.0027, hence significant evidence exists for the joint explanatory power $x_3$ and $x_4$.  
 
 \subproblem{ Test the model with only variables $x_1$ and $x_2$ against the model with variables $x_1,x_2,$ and $x_3$. }
 
 Note that $\RSS(x_1,x_2,x_3) = \RSS(x_1,x_2,x_3,x_4) + \SSReg(x_4|x_1,x_2,x_3) = 15473$.  Hence the relavant $F$-statistic is
 
 $$
-  F = \frac{\SSReg(x_1,x_2)/2}{\RSS(x_1,x_2,x_3)/(n-p+1)} = \frac{(883880+8183)/2}{14085/51} = 1456.964.
+  F = \frac{\SSReg(x_3|x_1,x_2)}{\RSS(x_1,x_2,x_3)/(n-p+1)} = \frac{\SSReg(x_3|x_1,x_2)}{\MSE(x_1,x_2,x_3)}  \frac{3237/2}{15473/51} = 10.669.
 $$
-As before, the p-value is practically 0 providing significant evidence for the joint significance of $x_1$ and $x_2$.
+The p-value is 0.0001,  providing significant evidence for the joint significance of $x_3$ in the model without $x_4$.
 
 \subproblem{ Should the test in part (g) be the same as the test in part (j)?  Why or why not?}
 
-These are distinct tests (note the different $F$-statistics). The first tests the significance of
-$x_1,x_2$ in the context of the full model with $x_1,x_2,x_3,x_4$,
-while the second tests only relative to $x_1,x_2$, and $x_3$.  Although, since the coefficient for $x_4$ is not significant ($p = .123$), the competing explanatory power gained by droping $x_4$ was marginal. Hence there are similar $F$-statistics in each case.
+These are distinct tests (note the different $F$-statistics). The first tests the joint explanatory significance of
+$x_3,x_4$ in the context of the full model with each $x_1,x_2,x_3,x_4$,
+while the second tests only how $x_3$ adds to the model with $x_1,x_2$ and $x_3$.  Although, since the coefficient for $x_4$ is not significant ($p = .123$), the competing explanatory power gained by droping $x_4$ was marginal. Hence, both are practically testing how well $x_1$ and $x_2$ explain $y$.
 
 
 \subproblem{ For estimating the point on the regression surface at $(x_1,x_2,x_3,x_4) = (100,25,50,4)$, the standard error of the estimate for the point on the surface is 2.62.  Give the estimated point on the surface, a 95\% confidence interval for the point on the surface, and a 95\% prediction interval for a new point with these $x$-values.}
@@ -530,8 +531,8 @@ Std. Error & 9.726 & 309.612 & 10.538 & 381.539  \\
 
 To answer the primary question posed by the researchers, we tested the significance of the parameter $\beta_3$ in the model, and it was found to be moderately signficant ($p = 0.023$). Hence, we have evidence of an interaction between UVB and depth in explaining phytoplankton inhibition.  We can quantify the interaction by writing the model in the two depth cases
 \begin{align*}
-  y_i &= \beta_0 + \beta_1 x_{1i} \quad\quad\quad\text{ when at depth, and }\\
-  y_i &= (\beta_0 + \beta_2) + (\beta_1+ \beta_3)  x_{1i} \quad\text{ at the surface. }
+  y_i &= \beta_0 + \beta_1 x_{1i} \quad\quad\quad\text{ when at the surface, and }\\
+  y_i &= (\beta_0 + \beta_2) + (\beta_1+ \beta_3)  x_{1i} \quad\text{ at depth. }
 \end{align*}
 That is the slope of the relationship between inhibition and UVB is expected to
 be $\hat\beta_3 \approx 980.039$ higher at depth than at the surface, and the

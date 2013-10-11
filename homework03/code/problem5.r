@@ -34,16 +34,14 @@ se_beta3 = .152
 (ssreg3_tot = f3*mse)
 
 # (i)
-ssreg1 = 883880
-ssreg2 = 183
-(f12 = (ssreg1 + ssreg2)/2/mse)
+ssreg3 = 3237
+ssreg4 = 694
+(f12 = (ssreg3 + ssreg4)/2/mse)
 1-pf(f12,2,n-p)
 
 # (j)
-ssreg4 = 694
-rss = tss - ssreg
 (rss123 = rss + ssreg4)
-(f12_123 = (ssreg1 + ssreg2)/2/(rss123/(n-p+1)))
+(f12_123 = ssreg3/(rss123/(n-p+1)))
 1-pf(f12_123,2,n-p+1)
 
 # (l)

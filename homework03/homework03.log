@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-1.40.10 (TeX Live 2009/Debian) (format=pdflatex 2012.6.16)  11 OCT 2013 10:56
+This is pdfTeX, Version 3.1415926-1.40.10 (TeX Live 2009/Debian) (format=pdflatex 2012.6.16)  11 OCT 2013 13:38
 entering extended mode
  \write18 enabled.
  %&-line parsing enabled.
@@ -693,13 +693,7 @@ Overfull \hbox (1.28848pt too wide) in paragraph at lines 257--273
  []
 
 [4] [5]
-Overfull \hbox (4.77284pt too wide) detected at line 345
-\OML/cmm/m/it/12 F \OT1/cmr/m/n/12 = [] = [] = [] = 1495\OML/cmm/m/it/12 :\OT1/
-cmr/m/n/12 471\OML/cmm/m/it/12 :
- []
-
-
-Overfull \hbox (5.5962pt too wide) in paragraph at lines 364--364
+Overfull \hbox (5.5962pt too wide) in paragraph at lines 365--365
 []\OT1/cmr/bx/n/12 (l)   \OT1/cmr/m/it/12 For es-ti-mat-ing the point on the re
 -gres-sion sur-face at $\OT1/cmr/m/n/12 (\OML/cmm/m/it/12 x[]; x[]; x[]; x[]\OT
 1/cmr/m/n/12 ) = (100\OML/cmm/m/it/12 ; \OT1/cmr/m/n/12 25\OML/cmm/m/it/12 ; \O
@@ -707,19 +701,19 @@ T1/cmr/m/n/12 50\OML/cmm/m/it/12 ; \OT1/cmr/m/n/12 4)$\OT1/cmr/m/it/12 ,
  []
 
 [6]
-Overfull \hbox (23.4125pt too wide) in paragraph at lines 397--397
+Overfull \hbox (23.4125pt too wide) in paragraph at lines 398--398
 \OT1/cmr/m/it/12 Report the fol-low-ing vec-tors and ma-tri-ces: $[]\OML/cmm/m/
 it/12 ; []; []; \OT1/cmr/m/n/12 ([])[]\OML/cmm/m/it/12 ; \OT1/cmr/m/n/12 & [] =
  ([])[][]$\OT1/cmr/m/it/12 .
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 397--397
+Underfull \hbox (badness 10000) in paragraph at lines 398--398
 
  []
 
 
-Overfull \hbox (53.46436pt too wide) in paragraph at lines 408--438
+Overfull \hbox (53.46436pt too wide) in paragraph at lines 409--439
  [] 
  []
 
@@ -732,7 +726,7 @@ File: ozone_resid.pdf Graphic file (type pdf)
 <ozone_qqplot.pdf, id=73, 505.89pt x 505.89pt>
 File: ozone_qqplot.pdf Graphic file (type pdf)
  <use ozone_qqplot.pdf>
-Underfull \hbox (badness 10000) in paragraph at lines 535--541
+Underfull \hbox (badness 10000) in paragraph at lines 536--542
 \OMS/cmsy/m/n/12 ^^@\OT1/cmr/m/n/12 1\OML/cmm/m/it/12 :\OT1/cmr/m/n/12 467$.
  []
 
@@ -769,7 +763,7 @@ fonts/cm/cmtt12.pfb></usr/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cm
 tt8.pfb></usr/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmtt9.pfb></us
 r/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmu10.pfb></usr/share/texm
 f-texlive/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
-Output written on homework03.pdf (9 pages, 320887 bytes).
+Output written on homework03.pdf (9 pages, 320800 bytes).
 PDF statistics:
  178 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
