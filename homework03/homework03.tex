@@ -400,20 +400,93 @@ The model in matrix form is
 $$
 \vect y = \vect X \vect \beta + \vect \epsilon,
 $$
-where $\vect y$ and $\vect \epsilon$ are $n \times 1$ with entries $y_i$ and $\epsilon_i$ respectivly, $\vect X$ is $n\times 3$ with entries $x_{ij}$ with $j=0,1,2$, and $\beta$ is $3 \times 1$ with entries $\beta_j$.
+where $\vect y$ and $\vect \epsilon$ are $n \times 1$ with entries $y_i$ and $\epsilon_i$ respectivly, $\vect X$ is $n\times 3$ with entries $x_{ij}$ with $j=0,1,2$, and $\beta$ is $3 \times 1$ with entries $\beta_j$.  The following table summarizes the desired matrix computations.
+
+\renewcommand{\arraystretch}{1.2}
+\begin{center}
+\begin{tabular}{|c c c c c|}
+$\vect{X'X}$ & $\vect{X'y}$ & $\vect{y'y}$ & $(\vect{X'X})^{-1}$ & $(\vect{X'X})^{-1} \vect{X'y}$ \\\hline
+$ 
+\begin{bmatrix}
+ 20.00 &  238.00 &  182.240\\
+238.00 & 3420.00 & 2671.060\\
+182.24 & 2671.06 & 2161.227\\
+\end{bmatrix}
+$ & $
+\begin{bmatrix}
+ 1889.00 \\
+27246.00 \\
+21648.81 \\
+\end{bmatrix}
+$ &
+219449
+& $
+\begin{bmatrix}
+ 0.307& -0.033&  0.015\\
+-0.033&  0.012& -0.012\\
+ 0.015& -0.012&  0.014\\
+\end{bmatrix}
+$ & $
+\begin{bmatrix}
+3.324\\
+3.768\\
+5.080\\
+\end{bmatrix}
+$
+\end{tabular}
+\end{center}
 
 \subproblem{Estimate the variance-covariance matrix of the vector $\vect{ \hat \beta}$.}
 
+$$
+\hat{\mathrm{Var}(\vect{\hat \beta})} = (\vect{X'X})^{-1}\cdot\MSE \approx
+\begin{bmatrix}
+ 9.677 & -1.040 &  0.469\\
+-1.040 &  0.377 & -0.379\\
+ 0.469 & -0.379 &  0.443\\
+\end{bmatrix}.
+$$
 \subproblem{Test whether or not $\beta_2 > 50$ and interpret your conclusion clearly in the language of the problem. }
 
-\subproblem{ Noting that for random variables $U,V$ and constants $a,b$, we have:
+We test $H_0:\,\beta_2 \le 50$. The test statistic is
+
+$$
+  t^* = \frac{ \hat \beta_2 - 50 }{ \SE(\hat \beta_2) } \approx -67.49392.
+$$
+Hence $P( t > t^* ) \approx 1$ and we conclude that there is an extreme lack of
+evidence for ${H_a:\,\beta_2 > 50}$. Practically, given that $\hat \beta_2
+\approx 5.08$ and $SE(\hat \beta_2)^2 = 0.433$, we have absolutely no reason to believe
+that a shipment weighing 100 more pounds will result in more than 50 minutes of
+handling time (fixing the amount of drums). 
+\newpage
+
 \newcommand{\Var}{\mathrm{Var}}
+\subproblem{ Noting that for random variables $U,V$ and constants $a,b$, we have:
 $$
   \Var(aU + bV) = a^2\Var(U) + b^2\Var(V) + 2ab\mathrm{Cov}(U,V),
 $$
 compute the standard error of $\hat \beta_1 + 2\hat \beta_2$ using part (b) above, and test whether or not $\beta_1 = -2\beta_2$.}
 
+From above,
+$$
+  \Var(\hat \beta_1 + 2\hat \beta_2) = \Var(\hat\beta_1) + 4\Var(\hat\beta_2) + 4\mathrm{Cov}(\beta_1,\beta_2).
+$$
+Hence, an estimate for $\sqrt{\Var(\hat\beta_1 + 2\hat \beta_2)}$ is
+$$
+  \SE(\hat \beta_1 + 2\hat \beta_2) = \sqrt{ \hat{\Var(\vect{\hat \beta})}_{22} + 4\hat{\Var(\vect{\hat \beta})}_{33} + 4\hat{\Var(\vect{\hat \beta})}_{2,3} } \approx 0.7967.
+$$
+Note that $\hat \beta_1 + 2\hat \beta_2 \sim N(\beta_1 + 2\beta_2,\Var(\hat\beta_1 + 2\hat \beta_2))$. Hence, we can test $H_0:\,\beta_1 + 2\beta_2 = 0$ with the $t$-statistic 
+$$
+t^* = \frac{\hat \beta_1 + 2\hat \beta_2}{\SE(\hat \beta_1 + 2\hat \beta_2)} \approx 17.482,
+$$
+with p-value $2P(t > |t^*|) \approx 0$.  Hence, there is fairly significant evidence to conclude ${\beta_1 \not= -2\beta_2}$.
+
 \subproblem{Find a 90\% confidence interval for $\beta_1 + 2\beta_2$.}
+
+The confidence interval is given by
+$$
+  \hat \beta_1 + 2\hat \beta_2 \pm t_{.95}(n-p)\SE(\hat \beta_1 + 2\hat \beta_2) \approx 13.927 \pm 1.386\text{ or }( 12.541,15.313 ).
+$$
 
 \end{longproblem}
 
