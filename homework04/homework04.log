@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-1.40.10 (TeX Live 2009/Debian) (format=pdflatex 2012.6.16)  6 NOV 2013 13:45
+This is pdfTeX, Version 3.1415926-1.40.10 (TeX Live 2009/Debian) (format=pdflatex 2012.6.16)  6 NOV 2013 13:50
 entering extended mode
  \write18 enabled.
  %&-line parsing enabled.
@@ -587,36 +587,37 @@ driver: pdftex
 (1in=72.27pt, 1cm=28.45pt)
 -----------------------
 LaTeX Info: Redefining \ref on input line 18.
-ABD: EveryShipout initializing macros <resid1.pdf, id=4, 505.89pt x 505.89pt>
-File: resid1.pdf Graphic file (type pdf)
+ABD: EveryShipout initializing macros
+LaTeX Font Info:    Try loading font information for U+msa on input line 44.
 
-<use resid1.pdf> <qqplot1.pdf, id=5, 505.89pt x 505.89pt>
+(/usr/share/texmf-texlive/tex/latex/amsfonts/umsa.fd
+File: umsa.fd 2009/06/22 v3.00 AMS symbols A
+)
+LaTeX Font Info:    Try loading font information for U+msb on input line 44.
+
+(/usr/share/texmf-texlive/tex/latex/amsfonts/umsb.fd
+File: umsb.fd 2009/06/22 v3.00 AMS symbols B
+)
+LaTeX Font Info:    Try loading font information for U+lasy on input line 44.
+
+(/usr/share/texmf-texlive/tex/latex/base/ulasy.fd
+File: ulasy.fd 1998/08/17 v2.2e LaTeX symbol font definitions
+)
+LaTeX Font Info:    Try loading font information for U+rsfs on input line 44.
+
+(/usr/share/texmf-texlive/tex/latex/jknapltx/ursfs.fd
+File: ursfs.fd 1998/03/24 rsfs font definition file (jk)
+)
+<resid1.pdf, id=4, 505.89pt x 505.89pt>
+File: resid1.pdf Graphic file (type pdf)
+ <use resid1.pdf>
+<qqplot1.pdf, id=5, 505.89pt x 505.89pt>
 File: qqplot1.pdf Graphic file (type pdf)
  <use qqplot1.pdf>
 <half-normal1.pdf, id=6, 505.89pt x 505.89pt>
 File: half-normal1.pdf Graphic file (type pdf)
  <use half-normal1.pdf>
-LaTeX Font Info:    Try loading font information for U+msa on input line 60.
-
-(/usr/share/texmf-texlive/tex/latex/amsfonts/umsa.fd
-File: umsa.fd 2009/06/22 v3.00 AMS symbols A
-)
-LaTeX Font Info:    Try loading font information for U+msb on input line 60.
-
-(/usr/share/texmf-texlive/tex/latex/amsfonts/umsb.fd
-File: umsb.fd 2009/06/22 v3.00 AMS symbols B
-)
-LaTeX Font Info:    Try loading font information for U+lasy on input line 60.
-
-(/usr/share/texmf-texlive/tex/latex/base/ulasy.fd
-File: ulasy.fd 1998/08/17 v2.2e LaTeX symbol font definitions
-)
-LaTeX Font Info:    Try loading font information for U+rsfs on input line 60.
-
-(/usr/share/texmf-texlive/tex/latex/jknapltx/ursfs.fd
-File: ursfs.fd 1998/03/24 rsfs font definition file (jk)
-)
-Overfull \hbox (2.61107pt too wide) in paragraph at lines 58--68
+Overfull \hbox (2.61107pt too wide) in paragraph at lines 59--69
 []$[]$ $[]$ 
  []
 
@@ -629,27 +630,27 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
 [1{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}
 
  <./resid1.pdf> <./qqplot1.pdf> <./half-normal1.pdf>]
-<partial_residual_plots1.pdf, id=36, 722.7pt x 433.62pt>
+<partial_residual_plots1.pdf, id=39, 722.7pt x 433.62pt>
 File: partial_residual_plots1.pdf Graphic file (type pdf)
 
 <use partial_residual_plots1.pdf>
-Underfull \hbox (badness 10000) in paragraph at lines 102--103
+Underfull \hbox (badness 10000) in paragraph at lines 103--104
 
  []
 
 [2 <./partial_residual_plots1.pdf>]
-<time_plot21.pdf, id=54, 505.89pt x 505.89pt>
+<time_plot21.pdf, id=56, 505.89pt x 505.89pt>
 File: time_plot21.pdf Graphic file (type pdf)
  <use time_plot21.pdf>
-<time_plot22.pdf, id=55, 505.89pt x 505.89pt>
+<time_plot22.pdf, id=57, 505.89pt x 505.89pt>
 File: time_plot22.pdf Graphic file (type pdf)
  <use time_plot22.pdf>
-Overfull \hbox (10.20258pt too wide) in paragraph at lines 108--111
+Overfull \hbox (10.20258pt too wide) in paragraph at lines 109--112
 [][] [] []
  []
 
 
-Overfull \hbox (7.15941pt too wide) in paragraph at lines 115--117
+Overfull \hbox (7.15941pt too wide) in paragraph at lines 116--118
 \OT1/cmr/m/n/12 resid-u-als are nor-mal, and in-deed a qq-plot and the Shapiro-
 Francia test (\OT1/cmtt/m/n/12 W = 0.9898,
  []
@@ -663,60 +664,60 @@ Missing character: There is no â in font cmr12!
 Missing character: There is no € in font cmr12!
 Missing character: There is no ™ in font cmr12!
  [4]
-<time_plot4.pdf, id=77, 505.89pt x 505.89pt>
+<time_plot4.pdf, id=79, 505.89pt x 505.89pt>
 File: time_plot4.pdf Graphic file (type pdf)
  <use time_plot4.pdf>
-Overfull \hbox (2.61107pt too wide) in paragraph at lines 184--193
+Overfull \hbox (2.61107pt too wide) in paragraph at lines 185--194
 []$[]$ $[]$ 
  []
 
-<qqplot4.pdf, id=78, 505.89pt x 505.89pt>
+<qqplot4.pdf, id=80, 505.89pt x 505.89pt>
 File: qqplot4.pdf Graphic file (type pdf)
  <use qqplot4.pdf>
-Overfull \hbox (7.58179pt too wide) in paragraph at lines 195--201
+Overfull \hbox (7.58179pt too wide) in paragraph at lines 196--202
 []$[]$ $[]$ 
  []
 
 [5 <./time_plot4.pdf> <./qqplot4.pdf>]
-<resid4.pdf, id=97, 505.89pt x 505.89pt>
+<resid4.pdf, id=99, 505.89pt x 505.89pt>
 File: resid4.pdf Graphic file (type pdf)
  <use resid4.pdf>
-Overfull \hbox (50.40617pt too wide) detected at line 212
+Overfull \hbox (50.40617pt too wide) detected at line 213
 \OML/cmm/m/it/12 H[]  \OT1/cmr/m/n/12 :  [] [] \OML/cmm/m/it/12 H[]  \OT1/cmr/m
 /n/12 :  []
  []
 
 
-Underfull \hbox (badness 1142) in paragraph at lines 212--214
+Underfull \hbox (badness 1142) in paragraph at lines 213--215
 \OT1/cmr/m/n/12 with \OT1/cmtt/m/n/12 DW = 0.706, p-value = 7.598e-14 \OT1/cmr/
 m/n/12 in-di-cat-ing
  []
 
-<pollution_pairs.pdf, id=98, 505.89pt x 505.89pt>
+<pollution_pairs.pdf, id=100, 505.89pt x 505.89pt>
 File: pollution_pairs.pdf Graphic file (type pdf)
  <use pollution_pairs.pdf>
-Overfull \hbox (2.61107pt too wide) in paragraph at lines 227--238
+Overfull \hbox (2.61107pt too wide) in paragraph at lines 228--239
 []$[]$ $[]$ 
  []
 
-[6 <./resid4.pdf>] <resid5.pdf, id=109, 505.89pt x 505.89pt>
+[6 <./resid4.pdf>] <resid5.pdf, id=111, 505.89pt x 505.89pt>
 File: resid5.pdf Graphic file (type pdf)
  <use resid5.pdf>
-<qqplot5.pdf, id=110, 505.89pt x 505.89pt>
+<qqplot5.pdf, id=112, 505.89pt x 505.89pt>
 File: qqplot5.pdf Graphic file (type pdf)
  <use qqplot5.pdf> [7 <./pollution_pairs.pdf>] [8 <./resid5.pdf> <./qqplot5.pdf
 >]
-<cp_line.pdf, id=140, 505.89pt x 505.89pt>
+<cp_line.pdf, id=141, 505.89pt x 505.89pt>
 File: cp_line.pdf Graphic file (type pdf)
  <use cp_line.pdf> [9 <./cp_line.pdf>] (./homework04.aux) ) 
 Here is how much of TeX's memory you used:
- 12976 strings out of 495061
- 232640 string characters out of 1182621
+ 12978 strings out of 495061
+ 232659 string characters out of 1182621
  385579 words of memory out of 3000000
- 15834 multiletter control sequences out of 15000+50000
- 14763 words of font info for 61 fonts, out of 3000000 for 9000
+ 15835 multiletter control sequences out of 15000+50000
+ 14931 words of font info for 62 fonts, out of 3000000 for 9000
  28 hyphenation exceptions out of 8191
- 56i,12n,55p,1032b,257s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 56i,12n,55p,1032b,263s stack positions out of 5000i,500n,10000p,200000b,50000s
 </usr/share/texmf-te
 xlive/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/share/texmf-texlive/fonts
 /type1/public/amsfonts/cm/cmex10.pfb></usr/share/texmf-texlive/fonts/type1/publ
@@ -731,10 +732,11 @@ fonts/cm/cmr9.pfb></usr/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmsy
 /share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmti12.pfb></usr/share/texm
 f-texlive/fonts/type1/public/amsfonts/cm/cmti8.pfb></usr/share/texmf-texlive/fo
 nts/type1/public/amsfonts/cm/cmti9.pfb></usr/share/texmf-texlive/fonts/type1/pu
-blic/amsfonts/cm/cmtt12.pfb>
-Output written on homework04.pdf (9 pages, 282785 bytes).
+blic/amsfonts/cm/cmtt12.pfb></usr/share/texmf-texlive/fonts/type1/public/amsfon
+ts/cm/cmtt8.pfb>
+Output written on homework04.pdf (9 pages, 292792 bytes).
 PDF statistics:
- 200 PDF objects out of 1000 (max. 8388607)
+ 204 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
  78 words of extra memory for PDF output out of 10000 (max. 10000000)
 
