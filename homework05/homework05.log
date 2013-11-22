@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-1.40.10 (TeX Live 2009/Debian) (format=pdflatex 2012.6.16)  22 NOV 2013 13:40
+This is pdfTeX, Version 3.1415926-1.40.10 (TeX Live 2009/Debian) (format=pdflatex 2012.6.16)  22 NOV 2013 13:52
 entering extended mode
  \write18 enabled.
  %&-line parsing enabled.
@@ -722,7 +722,7 @@ LaTeX Font Info:    Font shape `U/lasy/b/n' in size <6> not available
 Here is how much of TeX's memory you used:
  13004 strings out of 495061
  232923 string characters out of 1182621
- 380083 words of memory out of 3000000
+ 379083 words of memory out of 3000000
  15850 multiletter control sequences out of 15000+50000
  18148 words of font info for 74 fonts, out of 3000000 for 9000
  28 hyphenation exceptions out of 8191
@@ -742,7 +742,7 @@ fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texmf-texlive/fonts/type1
 fonts/cm/cmti9.pfb></usr/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmt
 t12.pfb></usr/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmtt8.pfb></us
 r/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmtt9.pfb>
-Output written on homework05.pdf (6 pages, 267626 bytes).
+Output written on homework05.pdf (6 pages, 267341 bytes).
 PDF statistics:
  163 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)

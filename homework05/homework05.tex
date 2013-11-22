@@ -100,7 +100,7 @@ Field        1.22297    0.04107  29.778   <2e-16 ***
 Note that according to our weighting scheme, the lowest \texttt{Field} value
 has a very large weight on the model.  Observe the effect of the weighting on the
 estimates of the coefficients is minor, but does give less influence to the  high variable points
-near \texttt{Field}$\approx 40$.  Note also that the standard error for the slope has increased.
+near \texttt{Field} $\approx 60$.  Note also that the standard error for the slope has increased.
 \end{minipage}
 \end{solution}
 
@@ -119,7 +119,7 @@ In this figure we plot the residual plots for the 16 possible transformation
 combinations. The transformation is applied to \texttt{Lab} in each fixed
 column and \texttt{Field} in each fixed row.  It is clear that the inverse
 transformation is clearly not the thing to do in either the independent or
-dependent variable.  Combinations of Square root and log on both variables seem 
+dependent variable.  Combinations of square root and log on both variables seem 
 do better at reigning in heterogeneity, 
 and the plot that appears to have the most homogeneity of
 noise is log transformations on both \texttt{Lab} and \texttt{Field}.
@@ -141,7 +141,7 @@ As addressed in a previous homework (homework 4.2), there is a clear
 correlation between the divorce rate and year as seen in the time plot to the
 left. Fitting a least squares model and plotting the residuals versus time
 indicates a lack independence in the estimates by the ``running'' pattern.
-Adding \texttt{year} into the model does not resolve this issue (see the middle
+Adding \texttt{year} into the model does not resolve this issue (see the third
 plot).
 \end{solution}
 
@@ -188,7 +188,7 @@ The GLS estimates give more appropriate estimates for standard errors of the coe
 
   \subproblem{ Speculate why there might be correlation in the errors.}
 
-Even after accounting for each explanatory variable, it is not unreasonable to expect that the divorce rate from one year depends on that of the previous year since the social norms governing such a choice don't vary independently year to year.  Moreover, the apparent non-linear relationship between divorce rate and year indicates that adding it as a term in the model (without transformation) will likely not remove he dependence. 
+Even after accounting for each explanatory variable, it is not unreasonable to expect that the divorce rate from one year depends on that of the previous year since the social norms governing such a choice don't vary independently year to year.  Moreover, the apparent non-linear relationship between divorce rate and year indicates that adding it as a term in the model (without transformation) will likely not remove the dependence. 
 \end{longproblem}
 \newpage
 
@@ -230,7 +230,7 @@ Obs & $t_i$ & $h_i$ & Cooks' D & DFFits & DF Air Flow & DF Water Temp.& DF Acid 
 \begin{minipage}{.5\textwidth}
 We first find those points that are influential or potential outliers as
 outlined in homework 4.  Note that none of the adjusted residuals are
-particularly extreme. Based on this table, we see that that observations 4 and
+particularly extreme. Based on this table, we see that observations 4 and
 21 are potentially troublesome. While observation 17 is influential, it seems to be well-predicted.
   So, for least-trimmed squares we will make our trimming quantile $n-2$.
 
@@ -239,7 +239,7 @@ points indicated in the table above are highlighted with larger red circles.
 
 It appears that the least squares solution is influenced by observations 4 and 21
 as they are outlying in water temperature.  Note, however, that they influence the
-model in opposite directions, although.  
+model in opposite directions.  
 \end{minipage}
 \begin{tabular}{c | l l l l l}
 $\beta_i$  & LS & LAD & Huber & LTS & LS w/out 17,14,21\\\hline
@@ -249,7 +249,7 @@ Water.Temp &   1.295&   0.574&   0.926&   0.667&   0.559\\
 Acid.Conc. &  -0.152&  -0.061&  -0.128&  -0.056&  -0.114\\\hline
 \end{tabular}
 
-Note that the estimates $\widehat \beta_i$ remain relatively unchanged except for water temperature.  Each robust estimate adjusts the original estimate downward. Removing the outlying measurements most aggressively moves the estimate downward. 
+The estimates $\widehat \beta_i$ remain relatively unchanged except for water temperature.  Each robust estimate adjusts the water estimate estimate downward. Removing the outlying measurements most aggressively moves the estimate downward. 
 
 Supposing we decide that LTS is best, we proceed in estimating the uncertainty in each $\widehat \beta_i$ by bootstrapping 5000 samples and reporting Bonferroni corrected 95\% confidence intervals based on the quantiles of the bootstrapped sample. We compare these with the intervals from the least squares estimates. Note that water temperature is significant in least squares but not in LTS and the model without 17,14, and 21.
 
@@ -290,8 +290,8 @@ Acid.Conc.   -0.114   -0.468    0.241
   \begin{minipage}{.55\textwidth}
   We fit an ANOVA model with one factor at three levels taking the control as the baseline. Note that the strip chart to the left does not indicate any reason to investigate non-homogeneous variance between levels.  The model fit is moderately significant at $F=4.846,p=0.016$.
   
-  To test for an effect of the treatment, we test the significance of the contrast 
-  $$H_0:\,l= \mu_0 - \frac12(\mu_1 + \mu_2) = 0.$$  
+  To test for an effect of the ``average treatment'', we test the significance of the contrast 
+  $$H_0:\,l:= \mu_0 - \frac12(\mu_1 + \mu_2) = 0.$$  
 The test yields $t=-0.255,p=0.400$, so there is absolutely no evidence of an effect.  Note that treatment 1 is lower than the control and treatment 2 is higher, and their individual effects are washed out by averaging.  
 \end{minipage}
 \end{solution}
@@ -311,11 +311,15 @@ hypotheses (significance testing) and detecting ``psuedodifferences'' by samplin
 
 \problem{ Write a paragraph summary of what you plan to do as your final project for this course. }
 
-I plan on investigating methods for estimating variance in a random response in the pressence of measurement error where repeated measurements are taken.  We model the $n$ experiments with $m$ measurements as 
+I plan on investigating methods for estimating variance in a random response in the pressence of measurement error when repeated measurements are taken.  We model the $n$ experiments with $m$ measurements as 
 $$
   \vect y = \vect{X\beta} + \vect{P\eta} + \vect \epsilon
 $$
-where $\vect y$ is the response, $\vect{X\beta}$ are fixed linear predictors, $\vect{P\eta}$ is the modeled random variation in the experiment, and $\vect \epsilon$ is $(m n)\times 1$ is random and represents measurement error. 
-In particular, I plan on contrasting two methods, an iterative method and a REML of a mixed effect model.  Pending authorization, these methods will be presented on actual data.
+where $\vect y$ is the response, $\vect{X\beta}$ are fixed linear predictors,
+$\vect{P\eta}$ is the modeled random variation in the experiment, and $\vect
+\epsilon$ is random measurement error.  In
+particular, I plan on contrasting two methods, an iterative method and a REML
+of a mixed effect model.  Pending authorization, these methods will be
+presented on actual data.
 \end{document} 
 
