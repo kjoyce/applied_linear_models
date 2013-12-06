@@ -1,9 +1,9 @@
-This is pdfTeX, Version 3.1415926-1.40.10 (TeX Live 2009/Debian) (format=pdflatex 2012.6.16)  18 OCT 2013 15:03
+This is pdfTeX, Version 3.1415926-1.40.10 (TeX Live 2009/Debian) (format=pdflatex 2012.6.16)  5 DEC 2013 11:49
 entering extended mode
  \write18 enabled.
  %&-line parsing enabled.
-**test01.tex
-(./test01.tex
+**homework06.tex
+(./homework06.tex
 LaTeX2e <2009/09/24>
 Babel <v3.8l> and hyphenation patterns for english, usenglishmax, dumylang, noh
 yphenation, loaded.
@@ -515,34 +515,43 @@ Package: nicefrac 1998/08/04 v0.9b Nice fractions
 \L@UnitsRaiseTextstyle=\skip62
 \L@UnitsRaiseScriptstyle=\skip63
 ))
-\c@lemma=\count132
- (./test01.aux)
-\openout1 = `test01.aux'.
+(/usr/share/texmf-texlive/tex/latex/slashbox/slashbox.sty
+slashbox style by K.Yasuoka, May 1993.
+\@slashboxa=\box44
+\@slashboxb=\box45
+\@slashboxc=\box46
+\@slashboxwd=\count132
+\@slashboxht=\count133
+\@slashsepl=\dimen168
+\@slashsepr=\dimen169
+)
+\c@lemma=\count134
+ (./homework06.aux)
+\openout1 = `homework06.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 18.
-LaTeX Font Info:    ... okay on input line 18.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 18.
-LaTeX Font Info:    ... okay on input line 18.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 18.
-LaTeX Font Info:    ... okay on input line 18.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 18.
-LaTeX Font Info:    ... okay on input line 18.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 18.
-LaTeX Font Info:    ... okay on input line 18.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 18.
-LaTeX Font Info:    ... okay on input line 18.
-
-(/usr/share/texmf-texlive/tex/context/base/supp-pdf.mkii
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 19.
+LaTeX Font Info:    ... okay on input line 19.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 19.
+LaTeX Font Info:    ... okay on input line 19.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 19.
+LaTeX Font Info:    ... okay on input line 19.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 19.
+LaTeX Font Info:    ... okay on input line 19.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 19.
+LaTeX Font Info:    ... okay on input line 19.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 19.
+LaTeX Font Info:    ... okay on input line 19.
+ (/usr/share/texmf-texlive/tex/context/base/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count133
-\scratchdimen=\dimen168
-\scratchbox=\box44
-\nofMPsegments=\count134
-\nofMParguments=\count135
+\scratchcounter=\count135
+\scratchdimen=\dimen170
+\scratchbox=\box47
+\nofMPsegments=\count136
+\nofMParguments=\count137
 \everyMPshowfont=\toks43
-\MPscratchCnt=\count136
-\MPscratchDim=\dimen169
-\MPnumerator=\count137
+\MPscratchCnt=\count138
+\MPscratchDim=\dimen171
+\MPnumerator=\count139
 \everyMPtoPDFconversion=\toks44
 )
 *geometry auto-detecting driver*
@@ -586,37 +595,70 @@ driver: pdftex
 
 (1in=72.27pt, 1cm=28.45pt)
 -----------------------
-LaTeX Info: Redefining \ref on input line 18.
+LaTeX Info: Redefining \ref on input line 19.
 ABD: EveryShipout initializing macros
-LaTeX Font Info:    Try loading font information for U+msa on input line 49.
+<wool_interaction1.pdf, id=4, 505.89pt x 505.89pt>
+File: wool_interaction1.pdf Graphic file (type pdf)
+ <use wool_interaction1.pdf>
+LaTeX Font Info:    Try loading font information for U+msa on input line 45.
 
 (/usr/share/texmf-texlive/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2009/06/22 v3.00 AMS symbols A
 )
-LaTeX Font Info:    Try loading font information for U+msb on input line 49.
+LaTeX Font Info:    Try loading font information for U+msb on input line 45.
 
 (/usr/share/texmf-texlive/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2009/06/22 v3.00 AMS symbols B
 )
-LaTeX Font Info:    Try loading font information for U+lasy on input line 49.
+LaTeX Font Info:    Try loading font information for U+lasy on input line 45.
 
 (/usr/share/texmf-texlive/tex/latex/base/ulasy.fd
 File: ulasy.fd 1998/08/17 v2.2e LaTeX symbol font definitions
 )
-LaTeX Font Info:    Try loading font information for U+rsfs on input line 49.
+LaTeX Font Info:    Try loading font information for U+rsfs on input line 45.
 
 (/usr/share/texmf-texlive/tex/latex/jknapltx/ursfs.fd
 File: ursfs.fd 1998/03/24 rsfs font definition file (jk)
 )
-Overfull \hbox (44.77547pt too wide) in paragraph at lines 61--61
-[] 
+Overfull \hbox (10.81964pt too wide) in paragraph at lines 56--56
+[]\OT1/cmtt/m/n/9 tension       2 2034.3 1017.13  8.4980 0.0006926 ***[] 
  []
 
-<eda_problem1.pdf, id=4, 505.89pt x 505.89pt>
-File: eda_problem1.pdf Graphic file (type pdf)
- <use eda_problem1.pdf>
-Overfull \hbox (26.52144pt too wide) in paragraph at lines 91--92
-[][] 
+
+Overfull \hbox (1.36975pt too wide) in paragraph at lines 56--56
+[]\OT1/cmtt/m/n/9 wool          1  450.7  450.67  3.7653 0.0582130 .[] 
+ []
+
+
+Overfull \hbox (1.36975pt too wide) in paragraph at lines 56--56
+[]\OT1/cmtt/m/n/9 tension:wool  2 1002.8  501.39  4.1891 0.0210442 *[] 
+ []
+
+
+Overfull \hbox (57.18094pt too wide) in paragraph at lines 43--59
+[][] $[]$ $[]$ 
+ []
+
+<wool_resid1.pdf, id=5, 505.89pt x 505.89pt>
+File: wool_resid1.pdf Graphic file (type pdf)
+ <use wool_resid1.pdf>
+<wool_resid2.pdf, id=6, 505.89pt x 505.89pt>
+File: wool_resid2.pdf Graphic file (type pdf)
+ <use wool_resid2.pdf>
+Overfull \hbox (5.63277pt too wide) in paragraph at lines 60--66
+[] [] 
+ []
+
+<wool_interaction3.pdf, id=7, 505.89pt x 505.89pt>
+File: wool_interaction3.pdf Graphic file (type pdf)
+ <use wool_interaction3.pdf>
+Overfull \hbox (1.36975pt too wide) in paragraph at lines 82--82
+[]\OT1/cmtt/m/n/9 tension       2 2.1762 1.08808  7.7792 0.001185 **[] 
+ []
+
+
+Overfull \hbox (76.11089pt too wide) in paragraph at lines 67--85
+[]$[]$ $[]$ 
  []
 
 
@@ -627,88 +669,26 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
 
 [1{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}
 
-] [2 <./eda_problem1.pdf>] [3] <crab_scatter.pdf, id=31, 505.89pt x 505.89pt>
-File: crab_scatter.pdf Graphic file (type pdf)
- <use crab_scatter.pdf>
-Overfull \hbox (57.18094pt too wide) in paragraph at lines 172--181
-[][] $[]$ $[]$ 
- []
-
-
-Overfull \hbox (41.61159pt too wide) in paragraph at lines 200--208
- [] 
- []
-
-
-Overfull \hbox (9.64703pt too wide) in paragraph at lines 185--211
-[][] $[]$ $[]$
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 185--211
-
- []
-
-[4 <./crab_scatter.pdf>]
-LaTeX Font Info:    Font shape `U/lasy/b/n' in size <8> not available
-(Font)              Font shape `U/lasy/m/n' tried instead on input line 225.
-LaTeX Font Info:    Font shape `U/lasy/b/n' in size <6> not available
-(Font)              Font shape `U/lasy/m/n' tried instead on input line 225.
- [5]
-Overfull \hbox (50.3396pt too wide) in paragraph at lines 273--273
-[] 
- []
-
-
-Overfull \hbox (51.49911pt too wide) in paragraph at lines 294--311
- [] 
- []
-
-[6]
-Overfull \hbox (20.91812pt too wide) in paragraph at lines 322--323
-[]\OT1/cmr/m/n/12 (\OML/cmm/m/it/12 x[]\OMS/cmsy/m/n/12 j\OML/cmm/m/it/12 x[]; 
-x[]; x[]; x[]\OT1/cmr/m/n/12 )\OML/cmm/m/it/12 =[]$ \OT1/cmr/m/n/12 for the equ
-iv-a-lent test, i.e. $\OML/cmm/m/it/12 t \OT1/cmr/m/n/12 = [] = [] \OMS/cmsy/m/
-n/12 ^^Y
- []
-
-[7]
-Overfull \hbox (2.43651pt too wide) detected at line 342
-[]\OT1/cmr/m/n/9 (\OML/cmm/m/it/9 x[]; x[]; x[]\OT1/cmr/m/n/9 ) = [] = []\OML/c
-mm/m/it/9 :
- []
-
-[8] (./test01.aux) ) 
+ <./wool_interaction1.pdf> <./wool_resid1.pdf> <./wool_resid2.pdf>] [2 <./wool_
+interaction3.pdf>]
+(./homework06.aux) ) 
 Here is how much of TeX's memory you used:
- 12953 strings out of 495061
- 231977 string characters out of 1182621
- 382571 words of memory out of 3000000
- 15808 multiletter control sequences out of 15000+50000
- 19158 words of font info for 77 fonts, out of 3000000 for 9000
+ 12925 strings out of 495061
+ 232030 string characters out of 1182621
+ 376083 words of memory out of 3000000
+ 15798 multiletter control sequences out of 15000+50000
+ 10888 words of font info for 45 fonts, out of 3000000 for 9000
  28 hyphenation exceptions out of 8191
- 56i,16n,55p,787b,386s stack positions out of 5000i,500n,10000p,200000b,50000s
-</usr/share/texmf-texlive/fonts/type1/public/amsfonts/cmext
-ra/cmbsy8.pfb></usr/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmbx12.p
-fb></usr/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmbx8.pfb></usr/sha
-re/texmf-texlive/fonts/type1/public/amsfonts/cm/cmbx9.pfb></usr/share/texmf-tex
-live/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/texmf-texlive/fonts/
-type1/public/amsfonts/cmextra/cmex9.pfb></usr/share/texmf-texlive/fonts/type1/p
-ublic/amsfonts/cm/cmmi12.pfb></usr/share/texmf-texlive/fonts/type1/public/amsfo
-nts/cm/cmmi6.pfb></usr/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmmi8
-.pfb></usr/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmmi9.pfb></usr/s
-hare/texmf-texlive/fonts/type1/public/amsfonts/cm/cmmib10.pfb></usr/share/texmf
--texlive/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texmf-texlive/fon
-ts/type1/public/amsfonts/cm/cmr6.pfb></usr/share/texmf-texlive/fonts/type1/publ
-ic/amsfonts/cm/cmr8.pfb></usr/share/texmf-texlive/fonts/type1/public/amsfonts/c
-m/cmr9.pfb></usr/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmsy10.pfb>
-</usr/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/share/
-texmf-texlive/fonts/type1/public/amsfonts/cm/cmsy9.pfb></usr/share/texmf-texliv
-e/fonts/type1/public/amsfonts/cm/cmti12.pfb></usr/share/texmf-texlive/fonts/typ
-e1/public/amsfonts/cm/cmti9.pfb></usr/share/texmf-texlive/fonts/type1/public/am
-sfonts/cm/cmtt12.pfb>
-Output written on test01.pdf (8 pages, 270323 bytes).
+ 56i,11n,55p,791b,321s stack positions out of 5000i,500n,10000p,200000b,50000s
+</usr/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cm
+bx12.pfb></usr/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmmi12.pfb></
+usr/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/te
+xmf-texlive/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/share/texmf-texlive/f
+onts/type1/public/amsfonts/cm/cmtt12.pfb></usr/share/texmf-texlive/fonts/type1/
+public/amsfonts/cm/cmtt9.pfb>
+Output written on homework06.pdf (2 pages, 88153 bytes).
 PDF statistics:
- 131 PDF objects out of 1000 (max. 8388607)
+ 66 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
- 23 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 33 words of extra memory for PDF output out of 10000 (max. 10000000)
 
